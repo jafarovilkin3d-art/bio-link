@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proqram Yüklənir...</title>
+    <script type="text/javascript">
+        // Proqramın Play Market paket adı
+        var packageName = "com.jafaroffdavid.riyaziyyatoyunu"; 
+
+        // Play Marketə yönləndirmə URL-i
+        var androidUrl = "https://play.google.com/store/apps/details?id=" + packageName;
+
+        // Cihazın istifadəçi agentini yoxlamaq üçün
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Əgər cihaz Android-dirsə, birbaşa Play Marketə yönləndirir
+        if (/android/i.test(userAgent)) {
+            window.location.href = androidUrl;
+        } else {
+            // Əgər iOS və ya digər cihazdırsa, bu hissəyə düşür.
+            // Bu halda da Play Marketə yönləndirir, çünki iOS cihazlarda link işləməyəcək.
+            // Əgər iOS versiyanız varsa, bura onu əlavə edə bilərsiniz.
+            window.location.href = androidUrl; 
+        }
+    </script>
+</head>
+<body>
+    <p>Zəhmət olmasa gözləyin, proqram yüklənir...</p>
+</body>
+</html>
