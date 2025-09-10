@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="az">
 <head>
+    <meta charset="UTF-8">
     <title>Proqram Yüklənir...</title>
     <script type="text/javascript">
         // Proqramın Play Market paket adı
@@ -16,9 +17,8 @@
         if (/android/i.test(userAgent)) {
             window.location.href = androidUrl;
         } else {
-            // Əgər iOS və ya digər cihazdırsa, bu hissəyə düşür.
-            // Bu halda da Play Marketə yönləndirir, çünki iOS cihazlarda link işləməyəcək.
-            // Əgər iOS versiyanız varsa, bura onu əlavə edə bilərsiniz.
+            // Əgər iOS və ya digər cihazdırsa, buraya düşür
+            // Hələlik yenə də Play Market linkinə yönləndiririk
             window.location.href = androidUrl; 
         }
     </script>
